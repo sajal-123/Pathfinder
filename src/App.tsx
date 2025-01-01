@@ -13,7 +13,7 @@ function App() {
     <PathfindingProvider>
       <TileProvider>
         <SpeedContextProvider>
-          <div className='h-screen flex flex-col items-center justify-around w-full bg-gradient-to-b from-gray-400 via-blue-400 to-purple-400 font-bold'>
+          <div className='h-screen flex flex-col items-center justify-around w-full bg-gray-500 font-bold'>
             <Nav isVisualizationRunningRef={isVisualizationRunningRef} />
             <Grid isVisualizationRunningRef={isVisualizationRunningRef} />
           </div>

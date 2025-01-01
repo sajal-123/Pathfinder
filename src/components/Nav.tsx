@@ -60,9 +60,9 @@ function Nav({
 
 
     return (
-        <div className='flex items-center justify-center w-full border-b min-h-[4.5rem] px-0 sm:px-4 bg-gradient-to-b from-blue-500 to-green-500 animate-pulse rounded-full'>
-        <div className='flex items-center justify-center lg:justify-between w-full sm:w-[54rem]'>
-          <h1 className="lg:flex hidden w-[40%] text-2xl pl-1 text-white">
+        <div className='flex items-center justify-center  w-[80%] border-b min-h-[4.5rem] px-0 sm:px-4 '>
+        <div className='flex items-center md:flex-row flex-col justify-center lg:justify-between w-full sm:w-[54rem]'>
+          <h1 className="lg:flex items-center text-4xl pl-1 text-white">
             Path Visualizer
           </h1>
           <div className="flex sm:items-end items-center justify-start sm:justify-between sm:flex-row flex-col sm:space-y-0 space-y-3 sm:py-0 py-4 sm:space-x-4">
@@ -74,6 +74,7 @@ function Nav({
                 handleGenerateMaze(e.target.value as MazeType);
               }}
             />
+            <div className='flex gap-4'>
             <Select
               label='Graph'
               value={algorithm}
@@ -90,6 +91,7 @@ function Nav({
                 setSpeed(Number(e.target.value) as speedType);
               }}
             />
+            </div>
             <PlayButton
               isDisabled={isDisable}
               isGraphVisualized={isGraphVisualized}

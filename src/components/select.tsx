@@ -16,7 +16,8 @@ export const Select = ({
   isDisable,
 }: SelectProps) => {
   return (
-    <div>
+    <div className="flex items-center justify-center gap-2 ">
+       
       <label htmlFor={label} className="block text-sm font-medium text-black">
         {label}
       </label>
